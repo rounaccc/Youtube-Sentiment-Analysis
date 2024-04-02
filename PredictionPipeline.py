@@ -9,6 +9,7 @@ file = open('tokenizer.pickle', 'rb')
 tokenizer = pickle.load(file)
 model = load_model('fast_text_model')
 
+
 def predict(text):
     # clean text
     comments_text = []
@@ -21,7 +22,7 @@ def predict(text):
     predictions = []
     
     for comment in comments_text:
-        index = comments_text.index(comment)
+        # index = comments_text.index(comment)
         sequence = tokenizer.texts_to_sequences([comment])
         padded = keras.preprocessing.sequence.pad_sequences(
             sequence, maxlen=170)

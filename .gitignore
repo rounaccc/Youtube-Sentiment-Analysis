@@ -3,3 +3,4 @@
 .venv
 /.vscode
 /fast_text_model
+.csv
