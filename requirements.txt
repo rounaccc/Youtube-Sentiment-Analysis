@@ -1,0 +1,6 @@
+pandas
+streamlit
+matplotlib
+tensorflow
+keras_preprocessing
+pickle
